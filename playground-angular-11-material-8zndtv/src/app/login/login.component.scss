@@ -1,0 +1,27 @@
+.login-container {
+  width: 100%;
+  padding: 2%;
+  .header {
+    text-align: center;
+  }
+  .login-section {
+    padding: 5%;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    justify-content: center;
+    border-radius: 5px;
+    .adjust-width {
+      width: 90%;
+      display: flex;
+    }
+    .error-message {
+      color: red;
+      font-weight: bold;
+      margin-top: 1%;
+    }
+  }
+}

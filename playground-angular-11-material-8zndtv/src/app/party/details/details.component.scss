@@ -1,0 +1,18 @@
+.details-container {
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    .form-elements {
+      width: 30%;
+      .adjust-width {
+        width: 90%;
+      }
+      .checkboxes {
+        margin: 20% 0;
+      }
+    }
+  }
+  .buttons {
+    margin: 3%;
+  }
+}

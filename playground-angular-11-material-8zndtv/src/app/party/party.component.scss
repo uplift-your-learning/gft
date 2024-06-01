@@ -1,0 +1,38 @@
+.party-details-container {
+  .table-container {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: 2px 0;
+    border-radius: 5px;
+    background-color: white;
+    table {
+      // table-layout: fixed;
+      border-collapse: collapse;
+      width: 100%;
+      border-spacing: 0;
+      background: white;
+      th {
+        position: sticky;
+        text-align: left;
+        vertical-align: bottom;
+        top: 0;
+        background: white;
+        z-index: 999;
+        color: grey;
+      }
+      tr:nth-child(even) {
+        background: light-gray;
+      }
+      td {
+        padding: 1%;
+        min-width: 50px;
+        .link {
+          color: blue;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

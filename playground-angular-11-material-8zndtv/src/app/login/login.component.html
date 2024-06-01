@@ -1,0 +1,45 @@
+<div class="login-container mat-elevation-z4">
+  <div class="header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-section">
+    <form [formGroup]="loginForm">
+      <div>
+        <mat-form-field class="adjust-width">
+          <mat-label>Username:</mat-label>
+          <input matInput formControlName="username" type="text" />
+          <mat-error *ngIf="loginForm.get('username').hasError('required')">
+            Username is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="adjust-width">
+          <mat-label>Password:</mat-label>
+          <input
+            matInput
+            formControlName="password"
+            [type]="showPassword ? 'text' : 'password'"
+          />
+          <mat-error *ngIf="loginForm.get('password').hasError('required')">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <button
+          mat-raised-button
+          color="primary"
+          class="navigation-button"
+          type="submit"
+          (click)="login()"
+        >
+          Login
+        </button>
+      </div>
+      <div class="error-message" *ngIf="displayErrorMessage">
+        Credentials are incorrect. Please try again!
+      </div>
+    </form>
+  </div>
+</div>
